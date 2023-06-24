@@ -1,8 +1,7 @@
 package GUI;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,7 +38,6 @@ public class Main {
                 String tk = jtfUsername.getText();
                 String mk = jtfPassword.getText();
                 System.out.println(tk + " " +mk);
-
             }
         });
 
