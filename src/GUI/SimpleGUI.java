@@ -12,8 +12,7 @@ public class SimpleGUI implements ActionListener {
     JTextField jtfUsername, jtfPassword;
 
     SimpleGUI() {
-        frame = new JFrame("Simple GUI");
-        JFrame frame = new JFrame("GUI example");
+        frame = new JFrame("GUI example");
         frame.setSize(400, 300);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -46,7 +45,7 @@ public class SimpleGUI implements ActionListener {
         lblUsername.setText("Tai Khoan");
         lblPassword.setText("Mat Khau");
         String tk = jtfUsername.getText();
-        String mk = jtfUsername.getText();
+        String mk = jtfPassword.getText();
         System.out.println("tk=" + tk + " " + "mk=" + mk);
         System.out.println("Day la TQD");
     }

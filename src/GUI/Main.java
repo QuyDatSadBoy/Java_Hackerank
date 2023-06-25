@@ -23,15 +23,18 @@ public class Main {
 
         JButton btnLogin = new JButton("Login");
         btnLogin.setBounds(140, 150, 80, 20);
+        JButton btnLogin2 = new JButton("Login2");
+        btnLogin2.setBounds(300, 150, 80, 20);
 
         frame.add(lblUsername);
         frame.add(lblPassword);
         frame.add(btnLogin);
         frame.add(jtfPassword);
         frame.add(jtfUsername);
-
+        frame.add(btnLogin2);
         frame.setVisible(true);
 
+        
         btnLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -40,7 +43,14 @@ public class Main {
                 System.out.println(tk + " " +mk);
             }
         });
-
+        btnLogin2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String tk = jtfUsername.getText();
+                String mk = jtfPassword.getText();
+                System.out.println(tk + " " +mk+" 2");
+            }
+        });
 
     }
 }
