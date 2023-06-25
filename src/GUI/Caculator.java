@@ -14,38 +14,50 @@ public class Caculator extends JFrame implements ActionListener, FocusListener {
     private String Name1 = "FirstNumber";
     private String Name2 = "SecondNumber";
     private String Name3 = "Result = ";
-    private String btn1 = "ADD", btn2 = "SUB", btn3 = "MUL", btn4 = "DIV";
+    private String btn1 = "+", btn2 = "-", btn3 = "*", btn4 = "/";
 
     Caculator() {
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
+        Font font = new Font("Arial", Font.BOLD, 25);
+        Font font2 = new Font("Arial", Font.BOLD, 18);
 
         this.setTitle(Title);
         this.setSize(600, 600);
+
         lblFirstNumber = new JLabel(Name1);
-        lblFirstNumber.setBounds(50, 100, 100, 60);
+        lblFirstNumber.setBounds(50, 100, 150, 60);
+        lblFirstNumber.setFont(font2);
         lblSecondNumber = new JLabel(Name2);
-        lblSecondNumber.setBounds(50, 160, 100, 60);
+        lblSecondNumber.setBounds(50, 160, 150, 60);
+        lblSecondNumber.setFont(font2);
         jtfFirstNumber = new JTextField();
         jtfFirstNumber.setText(Name1);
         jtfFirstNumber.setBounds(200, 100, 150, 60);
+        jtfFirstNumber.setFont(font2);
         jtfSecondNumber = new JTextField();
         jtfSecondNumber.setText(Name2);
         jtfSecondNumber.setBounds(200, 160, 150, 60);
+        jtfSecondNumber.setFont(font2);
         jtfResult = new JTextField();
         jtfResult.setText(Name3);
+        jtfResult.setBounds(150, 400, 300, 100);
+        jtfResult.setFont(font);
         jtfResult.setEditable(false);
 
-        jtfResult.setBounds(150, 400, 300, 100);
         add = new Button(btn1);
         add.setBounds(100, 300, 100, 60);
+        add.setFont(font);
         sub = new Button(btn2);
         sub.setBounds(200, 300, 100, 60);
+        sub.setFont(font);
         mul = new Button(btn3);
         mul.setBounds(300, 300, 100, 60);
+        mul.setFont(font);
         div = new Button(btn4);
         div.setBounds(400, 300, 100, 60);
+        div.setFont(font);
 
         jtfFirstNumber.addFocusListener(this);
         jtfSecondNumber.addFocusListener(this);
