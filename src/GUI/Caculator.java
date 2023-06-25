@@ -20,6 +20,8 @@ public class Caculator extends JFrame implements ActionListener, FocusListener {
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
+        ToolTipManager.sharedInstance().setInitialDelay(0);
+
         Font font = new Font("Arial", Font.BOLD, 25);
         Font font2 = new Font("Arial", Font.BOLD, 18);
 
@@ -36,10 +38,12 @@ public class Caculator extends JFrame implements ActionListener, FocusListener {
         jtfFirstNumber.setText(Name1);
         jtfFirstNumber.setBounds(200, 100, 150, 60);
         jtfFirstNumber.setFont(font2);
+        jtfFirstNumber.setToolTipText("Moi ban nhap so thu 1 :");
         jtfSecondNumber = new JTextField();
         jtfSecondNumber.setText(Name2);
         jtfSecondNumber.setBounds(200, 160, 150, 60);
         jtfSecondNumber.setFont(font2);
+        jtfSecondNumber.setToolTipText("Moi ban nhap so thu 2 :");
         jtfResult = new JTextField();
         jtfResult.setText(Name3);
         jtfResult.setBounds(150, 400, 300, 100);
