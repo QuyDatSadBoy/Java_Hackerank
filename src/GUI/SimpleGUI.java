@@ -10,6 +10,7 @@ public class SimpleGUI implements ActionListener {
     JLabel lblPassword;
     JButton btnLogin;
     JTextField jtfUsername, jtfPassword;
+    JTextArea jtaTest;
 
     SimpleGUI() {
         frame = new JFrame("GUI example");
@@ -17,6 +18,7 @@ public class SimpleGUI implements ActionListener {
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
+        ToolTipManager.sharedInstance().setInitialDelay(0);
 
         lblUsername = new JLabel("Username");
         lblPassword = new JLabel("Password");
@@ -30,11 +32,19 @@ public class SimpleGUI implements ActionListener {
         jtfPassword = new JTextField();
         jtfUsername.setBounds(150, 50, 100, 20);
         jtfPassword.setBounds(150, 100, 100, 20);
+
+        jtaTest = new JTextArea();
+        jtaTest.setBounds(100,200,200,50);
+        jtaTest.setToolTipText("Moi ban nhap du lieu vo han !!!");
+        jtaTest.setWrapStyleWord(true);
+        jtaTest.setLineWrap(true);
+
         frame.add(lblUsername);
         frame.add(lblPassword);
         frame.add(btnLogin);
         frame.add(jtfUsername);
         frame.add(jtfPassword);
+        frame.add(jtaTest);
         btnLogin.addActionListener(this);
 
         frame.setVisible(true);
