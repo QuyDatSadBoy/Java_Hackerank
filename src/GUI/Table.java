@@ -4,8 +4,7 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.*;
-import java.util.Arrays;
-import java.util.Comparator;
+import java.util.*;
 
 public class Table extends JFrame implements ActionListener {
     JFrame frame;
