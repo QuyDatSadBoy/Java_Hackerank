@@ -16,7 +16,7 @@ public class Caculator extends JFrame implements ActionListener, FocusListener {
     private String Name3 = "Result = ";
     private String btn1 = "+", btn2 = "-", btn3 = "*", btn4 = "/";
 
-    Caculator() {
+    public Caculator() {
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
